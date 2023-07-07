@@ -1,0 +1,274 @@
+{
+  "courses":[
+  {
+    "id": 1,
+    "name": "Web Development Fundamentals",
+    "description": "Learn the basics of web development including HTML, CSS, and JavaScript.",
+    "agenda": "Introduction to HTML, CSS fundamentals, JavaScript basics",
+    "whatYouWillLearn": "Build static web pages, style websites with CSS, add interactivity with JavaScript",
+    "courseFee": 5000,
+    "duration": "4 weeks"
+  },
+  {
+    "id": 2,
+    "name": "Introduction to Python Programming",
+    "description": "Get started with Python programming language and learn the fundamentals.",
+    "agenda": "Python syntax, variables, data types, control flow",
+    "whatYouWillLearn": "Write Python programs, work with data structures, automate tasks",
+    "courseFee": 6000,
+    "duration": "6 weeks"
+  },
+  {
+    "id": 3,
+    "name": "Mobile App Development with React Native",
+    "description": "Build mobile applications using React Native framework.",
+    "agenda": "React Native fundamentals, UI components, navigation",
+    "whatYouWillLearn": "Develop cross-platform mobile apps, integrate APIs, deploy to app stores",
+    "courseFee": 8000,
+    "duration": "8 weeks"
+  },
+  {
+    "id": 4,
+    "name": "Data Science and Machine Learning",
+    "description": "Explore the field of data science and machine learning techniques.",
+    "agenda": "Data analysis, machine learning algorithms, model evaluation",
+    "whatYouWillLearn": "Perform data analysis, build predictive models, extract insights",
+    "courseFee": 10000,
+    "duration": "10 weeks"
+  },
+  {
+    "id": 5,
+    "name": "Full Stack Web Development",
+    "description": "Become a full stack web developer with hands-on experience in front-end and back-end technologies.",
+    "agenda": "HTML, CSS, JavaScript, Node.js, Express.js, MongoDB",
+    "whatYouWillLearn": "Develop full-fledged web applications, build RESTful APIs, work with databases",
+    "courseFee": 12000,
+    "duration": "12 weeks"
+  },
+  {
+    "id": 6,
+    "name": "Java Programming",
+    "description": "Learn the Java programming language and object-oriented programming concepts.",
+    "agenda": "Java syntax, classes and objects, inheritance, polymorphism",
+    "whatYouWillLearn": "Write Java programs, build object-oriented applications",
+    "courseFee": 6000,
+    "duration": "6 weeks"
+  },
+  {
+    "id": 7,
+    "name": "Front-End Web Development with Angular",
+    "description": "Master the Angular framework for building modern web applications.",
+    "agenda": "Angular fundamentals, components, services, routing",
+    "whatYouWillLearn": "Build dynamic web apps, handle data with observables, implement SPA architecture",
+    "courseFee": 8000,
+    "duration": "8 weeks"
+  },
+  {
+    "id": 8,
+    "name": "Android App Development",
+    "description": "Learn to develop Android applications using Java and Android Studio.",
+    "agenda": "Java for Android, UI design, app components",
+    "whatYouWillLearn": "Create Android apps, utilize device features, publish to the Play Store",
+    "courseFee": 10000,
+    "duration": "10 weeks"
+  },
+  {
+    "id": 9,
+    "name": "Cloud Computing with AWS",
+    "description": "Explore the services offered by Amazon Web Services (AWS) and learn to deploy applications on the cloud.",
+    "agenda": "AWS basics, EC2, S3, RDS, Lambda",
+    "whatYouWillLearn": "Deploy applications on AWS, work with cloud services, scale resources",
+    "courseFee": 9000,
+    "duration": "9 weeks"
+  },
+  {
+    "id": 10,
+    "name": "Data Structures and Algorithms",
+    "description": "Master the fundamental data structures and algorithms used in programming.",
+    "agenda": "Arrays, linked lists, stacks, queues, sorting algorithms",
+    "whatYouWillLearn": "Implement data structures, analyze algorithm efficiency",
+    "courseFee": 6000,
+    "duration": "6 weeks"
+  },
+  {
+    "id": 11,
+    "name": "React.js Development",
+    "description": "Learn to build interactive web interfaces using the React.js library.",
+    "agenda": "React components, state management, React Router",
+    "whatYouWillLearn": "Create reusable UI components, manage application state, handle routing",
+    "courseFee": 7000,
+    "duration": "7 weeks"
+  },
+  {
+    "id": 12,
+    "name": "iOS App Development with Swift",
+    "description": "Build iOS applications using the Swift programming language and Xcode.",
+    "agenda": "Swift basics, UI design, app development",
+    "whatYouWillLearn": "Develop iOS apps, utilize iOS frameworks, publish to the App Store",
+    "courseFee": 11000,
+    "duration": "11 weeks"
+  },
+  {
+    "id": 13,
+    "name": "Cybersecurity Fundamentals",
+    "description": "Learn the basics of cybersecurity and essential techniques to secure computer systems.",
+    "agenda": "Network security, cryptography, secure coding practices",
+    "whatYouWillLearn": "Identify common security vulnerabilities, implement secure practices",
+    "courseFee": 5000,
+    "duration": "5 weeks"
+  },
+  {
+    "id": 14,
+    "name": "UI/UX Design",
+    "description": "Master the principles of user interface and user experience design.",
+    "agenda": "Design thinking, wireframing, prototyping",
+    "whatYouWillLearn": "Create user-centered designs, conduct usability testing",
+    "courseFee": 6000,
+    "duration": "6 weeks"
+  },
+  {
+    "id": 15,
+    "name": "Advanced JavaScript Concepts",
+    "description": "Deep dive into advanced JavaScript concepts and modern JavaScript features.",
+    "agenda": "Closures, async programming, ES6+ features",
+    "whatYouWillLearn": "Write more efficient JavaScript code, utilize advanced features",
+    "courseFee": 4000,
+    "duration": "4 weeks"
+  },
+  {
+    "id": 16,
+    "name": "Software Testing and Quality Assurance",
+    "description": "Learn the principles of software testing and quality assurance techniques.",
+    "agenda": "Testing methodologies, test planning, test automation",
+    "whatYouWillLearn": "Design test cases, execute test plans, automate tests",
+    "courseFee": 7000,
+    "duration": "7 weeks"
+  },
+  {
+    "id": 17,
+    "name": "Blockchain Fundamentals",
+    "description": "Explore the fundamentals of blockchain technology and its applications.",
+    "agenda": "Blockchain basics, smart contracts, decentralized applications",
+    "whatYouWillLearn": "Understand blockchain principles, develop blockchain applications",
+    "courseFee": 8000,
+    "duration": "8 weeks"
+  },
+  {
+    "id": 18,
+    "name": "WordPress Development",
+    "description": "Learn to build websites using the WordPress content management system.",
+    "agenda": "WordPress installation, theme development, plugin customization",
+    "whatYouWillLearn": "Create dynamic websites with WordPress, customize themes and plugins",
+    "courseFee": 5000,
+    "duration": "5 weeks"
+  },
+  {
+    "id": 19,
+    "name": "Artificial Intelligence Fundamentals",
+    "description": "Get an introduction to artificial intelligence and its various applications.",
+    "agenda": "AI concepts, machine learning, natural language processing",
+    "whatYouWillLearn": "Understand AI principles, apply AI techniques to real-world problems",
+    "courseFee": 9000,
+    "duration": "9 weeks"
+  },
+  {
+    "id": 20,
+    "name": "Digital Marketing",
+    "description": "Learn the strategies and techniques for effective digital marketing campaigns.",
+    "agenda": "SEO, social media marketing, email marketing",
+    "whatYouWillLearn": "Plan and execute digital marketing campaigns, analyze marketing data",
+    "courseFee": 6000,
+    "duration": "6 weeks"
+  },
+  {
+    "id": 21,
+    "name": "Network Security and Ethical Hacking",
+    "description": "Explore the field of network security and ethical hacking techniques.",
+    "agenda": "Network protocols, vulnerability assessment, penetration testing",
+    "whatYouWillLearn": "Identify network security vulnerabilities, perform ethical hacking",
+    "courseFee": 10000,
+    "duration": "10 weeks"
+  },
+  {
+    "id": 22,
+    "name": "Big Data Analytics",
+    "description": "Learn to analyze and extract insights from large volumes of data.",
+    "agenda": "Data processing, data visualization, machine learning on big data",
+    "whatYouWillLearn": "Apply big data analytics techniques, work with distributed systems",
+    "courseFee": 8000,
+    "duration": "8 weeks"
+  },
+  {
+    "id": 23,
+    "name": "UI Design with Figma",
+    "description": "Master the Figma design tool for creating stunning user interfaces.",
+    "agenda": "Figma interface, design components, collaboration",
+    "whatYouWillLearn": "Create high-fidelity UI designs, collaborate with design teams",
+    "courseFee": 6000,
+    "duration": "6 weeks"
+  },
+  {
+    "id": 24,
+    "name": "Cloud Native Application Development",
+    "description": "Learn to develop applications using cloud-native technologies and architectures.",
+    "agenda": "Microservices, containers, serverless computing",
+    "whatYouWillLearn": "Design and build cloud-native applications, utilize cloud services",
+    "courseFee": 9000,
+    "duration": "9 weeks"
+  },
+  {
+    "id": 25,
+    "name": "Game Development with Unity",
+    "description": "Build interactive games using the Unity game development engine.",
+    "agenda": "Unity basics, game mechanics, physics simulation",
+    "whatYouWillLearn": "Develop 2D and 3D games, implement game features and mechanics",
+    "courseFee": 7000,
+    "duration": "7 weeks"
+  },
+  {
+    "id": 26,
+    "name": "Database Management Systems",
+    "description": "Learn the concepts and principles of database management systems.",
+    "agenda": "Relational databases, SQL queries, database design",
+    "whatYouWillLearn": "Manage and query databases, design efficient database schemas",
+    "courseFee": 5000,
+    "duration": "5 weeks"
+  },
+  {
+    "id": 27,
+    "name": "DevOps Fundamentals",
+    "description": "Explore the principles and practices of DevOps for efficient software development and deployment.",
+    "agenda": "Continuous integration, continuous deployment, infrastructure automation",
+    "whatYouWillLearn": "Implement DevOps practices, automate software delivery processes",
+    "courseFee": 8000,
+    "duration": "8 weeks"
+  },
+  {
+    "id": 28,
+    "name": "JavaScript Frameworks: Vue.js",
+    "description": "Learn to build web applications using the Vue.js framework.",
+    "agenda": "Vue.js fundamentals, components, state management",
+    "whatYouWillLearn": "Develop dynamic web applications, handle application state with Vuex",
+    "courseFee": 6000,
+    "duration": "6 weeks"
+  },
+  {
+    "id": 29,
+    "name": "Data Visualization with D3.js",
+    "description": "Master the D3.js library for creating interactive and dynamic data visualizations.",
+    "agenda": "D3.js basics, data binding, SVG manipulation",
+    "whatYouWillLearn": "Create custom data visualizations, handle data updates and interactions",
+    "courseFee": 7000,
+    "duration": "7 weeks"
+  },
+  {
+    "id": 30,
+    "name": "Internet of Things (IoT) Fundamentals",
+    "description": "Get an introduction to the Internet of Things (IoT) and its applications.",
+    "agenda": "IoT concepts, sensors and actuators, data analytics",
+    "whatYouWillLearn": "Understand IoT principles, develop IoT applications",
+    "courseFee": 5000,
+    "duration": "5 weeks"
+  }
+]
+}
