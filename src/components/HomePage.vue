@@ -7,7 +7,7 @@
       <p class="hero-subtitle">
         Unlock your potential with our online training programs
       </p>
-      <a href="/courses" class="hero-button">Browse Courses</a>
+      <router-link to="/courses" class="hero-button">Browse</router-link>
     </div>
     <div class="content-img">
       <img :src="imgUrl" alt="Content-img" />
@@ -17,33 +17,42 @@
       <div class="course-list">
         <!-- Course Item -->
         <div class="course-item">
-          <img src="../assets/course2.jpg" alt="Course Image" class="course-image" />
+          <img
+            src="../assets/course2.jpg"
+            alt="Course Image"
+            class="course-image" />
           <h3 class="course-name">Web Development Fundamentals</h3>
           <p class="course-description">
             Learn the basics of web development and build your own websites.
           </p>
-          <a href="/courses" class="hero-button">Browse</a>
+          <router-link to="/courses" class="hero-button">Browse</router-link>
         </div>
 
         <!-- Course Item -->
         <div class="course-item">
-          <img src="../assets/course3.jpg" alt="Course Image" class="course-image" />
+          <img
+            src="../assets/course3.jpg"
+            alt="Course Image"
+            class="course-image" />
           <h3 class="course-name">Introduction to Data Science</h3>
           <p class="course-description">
             Get started with data science and explorer the power of data
             analysis.
           </p>
-          <a href="/courses" class="hero-button">Browse</a>
+          <router-link to="/courses" class="hero-button">Browse</router-link>
         </div>
 
         <!-- Course Item -->
         <div class="course-item">
-          <img src="../assets/course1.jpg" alt="Course Image" class="course-image" />
+          <img
+            src="../assets/course1.jpg"
+            alt="Course Image"
+            class="course-image" />
           <h3 class="course-name">Mobile App Development with React Native</h3>
           <p class="course-description">
             Build native mobile apps for iOS and Android using React Native.
           </p>
-          <a href="/courses" class="hero-button">Browse</a>
+          <router-link to="/courses" class="hero-button">Browse</router-link>
         </div>
       </div>
     </div>

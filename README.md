@@ -4,7 +4,14 @@
 ```
 npm install
 ```
-
+### Connect server with database
+```
+node server.js
+```
+### Run local API for course list and notifications
+```
+npx json-server --watch courses.json
+```
 ### Compiles and hot-reloads for development
 ```
 npm run serve
@@ -19,6 +26,7 @@ npm run build
 ```
 npm run lint
 ```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

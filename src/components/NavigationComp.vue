@@ -1,5 +1,5 @@
 <template>
-  <div class="conatiner-fluid">
+  <div class="container-fluid">
     <nav class="navbar">
       <div class="navbar-brand">
         <!-- Logo -->
@@ -14,7 +14,7 @@
         >
         <div v-if="isLoggedIn" class="navbar-dropdown">
           <!-- Profile dropdown -->
-          <button class="navbar-link navbar-dropdown-toggle">
+          <button class="navbar-link navbar-dropdown-toggle" id="user-name">
             {{ userName }}
           </button>
           <div class="navbar-dropdown-content">
@@ -33,19 +33,22 @@
 </template>
 
 <script>
-export default{
-    data() {
-      return {
-        image: require("../assets/logo_transparent.png"),
-        isLoggedIn: true, 
-        userName: "Muskan Saini", 
-      };
-    },
+import { mapState } from "vuex";
+
+export default {
+  computed: {
+    ...mapState(["isLoggedIn", "userName"]),
+  },
+  data() {
+    return {
+      image: require("../assets/logo_transparent.png"),
+    };
+  },
   methods: {
     logout() {
-      // logout logic
-      this.isLoggedIn = false;
-      // Redirect to login page
+      this.$store.commit("setLoginStatus", false);
+      sessionStorage.removeItem("isLoggedIn");
+
       this.$router.push("/login");
     },
   },
@@ -78,17 +81,25 @@ export default{
   display: flex;
   align-items: center;
 }
-.navbar-link{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+.navbar-link {
+  font-family: "Lucida Sans", "Lucida Sans Regular";
   font-weight: bold;
   margin-right: 20px;
   color: #333;
   text-decoration: none;
 }
-.navbar-link:hover{
+#user-name {
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+  font-weight: bold;
+  margin-right: 20px;
+  color: brown;
+  text-decoration: none;
+  border: dashed brown;
+}
+.navbar-link:hover {
   color: brown;
 }
-.navbar-link:active{
+.navbar-link:active {
   color: brown;
 }
 .navbar-button {

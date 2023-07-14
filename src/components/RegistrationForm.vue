@@ -1,134 +1,169 @@
 <template>
-    <div class="registration-form">
-      <h2>Registration</h2>
-      <form @submit.prevent="register">
-        <!-- Registration form fields -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" v-model="name" required>
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" v-model="email" required>
-  
-        <label for="contact">Contact:</label>
-        <input type="tel" id="contact" v-model="contact" required>
-  
-        <label for="password">Password:</label>
-        <input type="password" id="password" v-model="password" required>
-  
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" v-model="confirmPassword" required>
-  
-        <button type="submit">Register</button>
-      </form>
+  <form class="registration-form" @submit.prevent="register">
+    <h2>Registration</h2>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" v-model="name" placeholder="Name" required />
     </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        name: '',
-        email: '',
-        contact: '',
-        password: '',
-        confirmPassword: '',
-      };
-    },
-    methods: {
-      register() {
-        if (!this.validateForm()) {
-        return;
-      }else{
-    const formData = {
-      name: this.name,
-      email: this.email,
-      password: this.password,
-    };
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        v-model="email"
+        placeholder="Email"
+        required />
+    </div>
+    <div class="form-group">
+      <label for="contact">Contact:</label>
+      <input
+        type="tel"
+        id="contact"
+        v-model="contact"
+        placeholder="Contact"
+        required
+        pattern="[0-9]{10}"
+        title="Please enter a valid 10-digit contact number" />
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        v-model="password"
+        placeholder="Password"
+        required
+        minlength="6"
+        title="Password must be at least 6 characters long" />
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        v-model="confirmPassword"
+        placeholder="Confirm Password"
+        required
+        :pattern="password"
+        title="Passwords do not match" />
+    </div>
 
-    // Send the HTTP POST request to the server
-    axios.post('http://localhost:3000/register', formData)
-      .then(response => {
-        // Handle the response from the server
-        console.log('Registration successful');
-        this.$router.push('/');
-      })
-      .catch(error => {
-        // Handle the error
-        console.error('Registration failed:', error);
-        alert("Registration Failed !!")
-      });
-       
+    <button type="submit">Register</button>
+  </form>
+</template>
+
+<script>
+import axios from "axios";
+import Swal from "sweetalert2";
+
+export default {
+  data() {
+    return {
+      name: "",
+      email: "",
+      contact: "",
+      password: "",
+      confirmPassword: "",
+    };
+  },
+  methods: {
+    register() {
+      if (this.password !== this.confirmPassword) {
+        Swal.fire({
+          title: "Password Do not match !!",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+        return;
       }
-       
-      },
-      validateForm() {
-  if (this.password !== this.confirmPassword) {
-    alert("Passwords don't match");
-    return false;
-  }
-  if (!this.name.trim()) {
-    return false;
-  }
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!this.email.trim() || !emailRegex.test(this.email.trim())) {
-    return false;
-  }
-  const contactRegex = /^\d{10}$/;
-  if (!this.contact.trim() || !contactRegex.test(this.contact.trim())) {
-    return false;
-  }
-  if (this.password.length < 8) {
-    return false;
-  }
-  return true;
-},
+
+      const formData = {
+        name: this.name,
+        email: this.email,
+        contact: this.contact,
+        password: this.password,
+      };
+
+      axios
+        .post("http://localhost:8081/register", formData)
+        .then((response) => {
+          console.log(response.data.message);
+          // Reset the form
+          Swal.fire({
+            title: "Successfully Registered !!",
+            icon: "success",
+            confirmButtonText: "OK",
+          });
+          this.name = "";
+          this.email = "";
+          this.contact = "";
+          this.password = "";
+          this.confirmPassword = "";
+          this.$router.push("/login");
+        })
+        .catch((error) => {
+          console.error(
+            "An error occurred during registration:",
+            error.response.data
+          );
+          Swal.fire({
+            title: "User already exists !!",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+          this.$router.push("/login");
+        });
     },
-  };
-  </script>
-  
-  <style scoped>
-  .registration-form {
-    max-width: 400px;
-    margin: auto;
-    margin-top:40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .registration-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: brown;
-  }
-  
-  .registration-form label {
-    display: block;
-    margin-bottom: 8px;
-  }
-  
-  .registration-form input[type="text"],
-  .registration-form input[type="email"],
-  .registration-form input[type="tel"],
-  .registration-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 12px;
-  }
-  
-  .registration-form button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: brown;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  </style>
-  
+  },
+};
+</script>
+
+<style scoped>
+h2 {
+  color: brown;
+  text-align: center;
+}
+.registration-form {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: brown;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: lightcoral;
+  color: black;
+}
+</style>

@@ -271,131 +271,132 @@
       "duration": "5 weeks"
     }
   ],
+  
   "notifications": [
-  {
-    "id": 1,
-    "title": "New Course Available",
-    "message": "A new course on Web Development has been added. Check it out now!"
-  },
-  {
-    "id": 2,
-    "title": "Reminder: Assignment Due",
-    "message": "Just a reminder that the assignment for Data Science course is due tomorrow."
-  },
-  {
-    "id": 3,
-    "title": "Upcoming Webinar",
-    "message": "Join us for an upcoming webinar on Cybersecurity. Save the date!"
-  },
-  {
-    "id": 4,
-    "title": "Important Announcement",
-    "message": "We have made some updates to the course schedule. Please check the updated timetable."
-  },
-  {
-    "id": 5,
-    "title": "New Instructor",
-    "message": "We are pleased to introduce a new instructor for the Machine Learning course. Welcome aboard!"
-  },
-  {
-    "id": 6,
-    "title": "Enrollment Open",
-    "message": "Enrollment is now open for the Advanced JavaScript course. Reserve your spot today!"
-  },
-  {
-    "id": 7,
-    "title": "Student Feedback Survey",
-    "message": "Please take a moment to provide your feedback on the training program. Your input is valuable to us."
-  },
-  {
-    "id": 8,
-    "title": "Holiday Closure",
-    "message": "Please note that the academy will be closed from December 24th to January 1st for the holidays."
-  },
-  {
-    "id": 9,
-    "title": "Guest Speaker Event",
-    "message": "Join us for a guest speaker event featuring a renowned industry expert in Artificial Intelligence."
-  },
-  {
-    "id": 10,
-    "title": "Technical Issue Resolved",
-    "message": "The technical issue that affected access to the online platform has been resolved. Thank you for your patience."
-  },
-  {
-    "id": 11,
-    "title": "Workshop Announcement",
-    "message": "We are organizing a workshop on Python programming. Limited seats available. Register now!"
-  },
-  {
-    "id": 12,
-    "title": "Career Counseling Session",
-    "message": "Join us for a career counseling session to explore various opportunities in the IT industry."
-  },
-  {
-    "id": 13,
-    "title": "New Certification Program",
-    "message": "Introducing a new certification program in Cloud Computing. Enhance your skills and boost your career."
-  },
-  {
-    "id": 14,
-    "title": "Student Achievements",
-    "message": "Congratulations to our students for their exceptional performance in the recent coding competition."
-  },
-  {
-    "id": 15,
-    "title": "Course Feedback",
-    "message": "We value your feedback! Please take a moment to provide your feedback on the training course you attended."
-  },
-  {
-    "id": 16,
-    "title": "Live Q&A Session",
-    "message": "Join us for a live question and answer session with our expert panel. Bring your questions!"
-  },
-  {
-    "id": 17,
-    "title": "Industry Internship Opportunity",
-    "message": "Exciting internship opportunity available in collaboration with a leading industry partner. Apply now!"
-  },
-  {
-    "id": 18,
-    "title": "Important Update: Exam Schedule",
-    "message": "There has been a change in the exam schedule. Please review the updated timetable."
-  },
-  {
-    "id": 19,
-    "title": "New Course Material",
-    "message": "Additional course material has been uploaded to the online platform. Access it now."
-  },
-  {
-    "id": 20,
-    "title": "Job Placement Assistance",
-    "message": "We provide job placement assistance to our graduates. Contact us for more information."
-  },
-  {
-    "id": 21,
-    "title": "Feedback Contest",
-    "message": "Participate in our feedback contest and get a chance to win exciting prizes. Your opinion matters!"
-  },
-  {
-    "id": 22,
-    "title": "Holiday Discount",
-    "message": "Enjoy a special holiday discount on select courses. Enroll now and save!"
-  },
-  {
-    "id": 23,
-    "title": "Reminder: Quiz Tomorrow",
-    "message": "Just a reminder that the quiz for the Database Management course is scheduled for tomorrow."
-  },
-  {
-    "id": 24,
-    "title": "New Course: Artificial Intelligence",
-    "message": "Introducing a new course on Artificial Intelligence. Dive into the world of AI and machine learning."
-  },
-  {
-    "id": 25,
-    "title": "Graduation Ceremony",
-    "message": "Save the date for our upcoming graduation ceremony. Celebrate your achievements with us."
-  }
-]
+    {
+      "id": 1,
+      "title": "New Course Available",
+      "message": "A new course on Web Development has been added. Check it out now!"
+    },
+    {
+      "id": 2,
+      "title": "Reminder: Assignment Due",
+      "message": "Just a reminder that the assignment for Data Science course is due tomorrow."
+    },
+    {
+      "id": 3,
+      "title": "Upcoming Webinar",
+      "message": "Join us for an upcoming webinar on Cybersecurity. Save the date!"
+    },
+    {
+      "id": 4,
+      "title": "Important Announcement",
+      "message": "We have made some updates to the course schedule. Please check the updated timetable."
+    },
+    {
+      "id": 5,
+      "title": "New Instructor",
+      "message": "We are pleased to introduce a new instructor for the Machine Learning course. Welcome aboard!"
+    },
+    {
+      "id": 6,
+      "title": "Enrollment Open",
+      "message": "Enrollment is now open for the Advanced JavaScript course. Reserve your spot today!"
+    },
+    {
+      "id": 7,
+      "title": "Student Feedback Survey",
+      "message": "Please take a moment to provide your feedback on the training program. Your input is valuable to us."
+    },
+    {
+      "id": 8,
+      "title": "Holiday Closure",
+      "message": "Please note that the academy will be closed from December 24th to January 1st for the holidays."
+    },
+    {
+      "id": 9,
+      "title": "Guest Speaker Event",
+      "message": "Join us for a guest speaker event featuring a renowned industry expert in Artificial Intelligence."
+    },
+    {
+      "id": 10,
+      "title": "Technical Issue Resolved",
+      "message": "The technical issue that affected access to the online platform has been resolved. Thank you for your patience."
+    },
+    {
+      "id": 11,
+      "title": "Workshop Announcement",
+      "message": "We are organizing a workshop on Python programming. Limited seats available. Register now!"
+    },
+    {
+      "id": 12,
+      "title": "Career Counseling Session",
+      "message": "Join us for a career counseling session to explore various opportunities in the IT industry."
+    },
+    {
+      "id": 13,
+      "title": "New Certification Program",
+      "message": "Introducing a new certification program in Cloud Computing. Enhance your skills and boost your career."
+    },
+    {
+      "id": 14,
+      "title": "Student Achievements",
+      "message": "Congratulations to our students for their exceptional performance in the recent coding competition."
+    },
+    {
+      "id": 15,
+      "title": "Course Feedback",
+      "message": "We value your feedback! Please take a moment to provide your feedback on the training course you attended."
+    },
+    {
+      "id": 16,
+      "title": "Live Q&A Session",
+      "message": "Join us for a live question and answer session with our expert panel. Bring your questions!"
+    },
+    {
+      "id": 17,
+      "title": "Industry Internship Opportunity",
+      "message": "Exciting internship opportunity available in collaboration with a leading industry partner. Apply now!"
+    },
+    {
+      "id": 18,
+      "title": "Important Update: Exam Schedule",
+      "message": "There has been a change in the exam schedule. Please review the updated timetable."
+    },
+    {
+      "id": 19,
+      "title": "New Course Material",
+      "message": "Additional course material has been uploaded to the online platform. Access it now."
+    },
+    {
+      "id": 20,
+      "title": "Job Placement Assistance",
+      "message": "We provide job placement assistance to our graduates. Contact us for more information."
+    },
+    {
+      "id": 21,
+      "title": "Feedback Contest",
+      "message": "Participate in our feedback contest and get a chance to win exciting prizes. Your opinion matters!"
+    },
+    {
+      "id": 22,
+      "title": "Holiday Discount",
+      "message": "Enjoy a special holiday discount on select courses. Enroll now and save!"
+    },
+    {
+      "id": 23,
+      "title": "Reminder: Quiz Tomorrow",
+      "message": "Just a reminder that the quiz for the Database Management course is scheduled for tomorrow."
+    },
+    {
+      "id": 24,
+      "title": "New Course: Artificial Intelligence",
+      "message": "Introducing a new course on Artificial Intelligence. Dive into the world of AI and machine learning."
+    },
+    {
+      "id": 25,
+      "title": "Graduation Ceremony",
+      "message": "Save the date for our upcoming graduation ceremony. Celebrate your achievements with us."
+    }
+  ]
 }
